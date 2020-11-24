@@ -49,6 +49,9 @@ public class ProductController {
 				.orElseThrow(()->new ResourceNotFound("Product with id " +id+ " not found"));
 		
 		product.setDescription(productDetails.getDescription());
+		product.setPrice(productDetails.getPrice());
+		product.setTitle(productDetails.getTitle());
+		product.setUrl(productDetails.getUrl());
 		
 		Product updatedProduct = productRepository.save(product);
 		return ResponseEntity.ok(updatedProduct);
