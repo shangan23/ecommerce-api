@@ -31,4 +31,8 @@
 * - userName
 * - password
 * - active
-* - authorities 
+* - authorities
+
+## Annotation 
+@EnableWebSecurity
+ 
